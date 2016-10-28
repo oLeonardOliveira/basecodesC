@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+int dia, mes, ano;
+printf("Digite o dia: ");
+scanf("%i", &dia);
+printf("\nDigite o mes: ");
+scanf("%i", &mes);
+printf("\nDigite o ano: ");
+scanf("%i", &ano);
+if (dia >=1 && dia<=31){
+	if (mes>=1 & mes<=12){
+    	if (mes == 2){
+        	if (ano%4 == 0){
+            	if (dia >=1 & dia<=29){
+                printf("\nData valida");
+            	}
+            	else
+				{
+                printf("\nData nao valida");
+           		}
+        		}
+        else{
+            printf("\nData nao valida");
+        }
+    }
+}
+    else{
+        if (mes == 1 || mes==3 || mes==5 && mes==7 || mes==8 || mes==10 || mes==12){
+            if (dia >=1 && dia<=31){
+                printf("\nData valida");
+            }
+            else{
+                printf("\nData nao valida");
+            }
+        }
+        else{
+            printf("\nData nao valida");
+        }
+        if (mes==4 || mes==6 || mes==9 || mes==11){
+            if (dia >= 1 & dia <=30){
+                printf("\nData valida");
+            }
+            else{
+                printf("\nData nao valida");
+                }
+            }
+        }
+    }
+    else{
+        printf("\nData nao valida");
+    }
+
+
+}
